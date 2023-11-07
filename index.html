@@ -2,27 +2,19 @@
 <html lang="en">
 <html>
 <head>
-   <meta charset="UTF-8">
-   <title>Pica-Pau online</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css"> 
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-
-<title>Botão para Vídeo YouTube</title>
-<style> #youtubeVideo {display: none;}
-</style>
+    <title>Pica-Pau online</title>
+    <link rel="stylesheet" href="style.css"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Botão para Vídeo YouTube</title>
+    <style> #youtubeVideo {display: none;}</style>
 </head>
-
 <body>
-   <header></header>
-
-   <main class="box">
-      <h1 class="box_titulo">GUESS WHO??</h1>
-      <img src="2419205.jpg" alt="guess who?" width="560" height="315">  
-
-<button class="box_links_botoes" onclick="showVideo()">Clique aqui!</button>
+<header></header>
+<main class="box">
+    <h1 class="box_titulo">GUESS WHO??</h1>
+    <img src="2419205.jpg" alt="guess who?" width="560" height="315">  
+    <button class="box_links_botoes" onclick="showVideo()">Clique aqui!</button>
 <div id="youtubeVideo" class="video-container">
     <iframe
     src="https://www.youtube.com/embed/8prmkJPDY0w?si=WFoXRKHhIG12xQ1o"
@@ -31,7 +23,7 @@
     allowfullscreen></iframe>
 </div>
     <script>
-    function showVideo() {
+        function showVideo() {
         document.getElementById('youtubeVideo').style.display = 'block';
     }
     </script>

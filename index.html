@@ -8,14 +8,10 @@
    <link rel="stylesheet" href="style.css"> 
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
 <title>Botão para Vídeo YouTube</title>
-<style>
-    #youtubeVideo {
-        display: none;
-        width: 640px;
-        height: 480px;
-    }
+<style> #youtubeVideo {display: none;}
 </style>
 </head>
 
@@ -25,23 +21,21 @@
    <main class="box">
       <h1 class="box_titulo">GUESS WHO??</h1>
       <img src="2419205.jpg" alt="guess who?" width="560" height="315">  
-   <!-- <div class="box_links">
-      <a class="box_links_botoes" href="https://www.youtube.com/watch?v=8prmkJPDY0w" target="_blank" rel="noopener noreferrer">(não)Clique aqui</a>
-   </div>  -->
 
 <button class="box_links_botoes" onclick="showVideo()">Clique aqui!</button>
-<div id="youtubeVideo">
-    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/8prmkJPDY0w?si=WFoXRKHhIG12xQ1o" 
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div id="youtubeVideo" class="video-container">
+    <iframe
+    src="https://www.youtube.com/embed/8prmkJPDY0w?si=WFoXRKHhIG12xQ1o"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
 </div>
-<script>
+    <script>
     function showVideo() {
         document.getElementById('youtubeVideo').style.display = 'block';
     }
-</script>
-
-
-   </main>
-   <footer></footer>   
+    </script>
+</main>
+<footer></footer>   
 </body>
 </html>
